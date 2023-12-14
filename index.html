@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gsap animation</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <script defer src="./index.js"></script>
+</head>
+<body class="h-screen w-screen overflow-y-scroll overflow-x-hidden">
+    
+    <div class="flex justify-center">
+        <div>
+            <button id="close-btn" class="absolute opacity-0 bg-white h-8 w-8 rounded-full top-5 z-50 text-gray-600">X</button>
+        </div>
+    </div>
+    <main class="h-screen w-screen flex flex-col justify-center items-center">
+        <img src="./image/monde.jpg" class="img absolute left-0 right-0 object-cover z-0" alt="">
+        <div class="wrapped h-screen w-screen block opacity-0 absolute z-10 bg-blue-600/40"></div>
+        <section class="mt-20 relative z-50">
+            <div class="relative h-[10rem] w-[80vw] flex flex-col justify-center items-center">
+                <div class="newsletter-box flex justify-between bg-white items-center flex-nowrap translate-y-[16rem] w-[8vw] h-[8vh] opacity-0 relative overflow-hidden  border p-1 rounded-full">
+                    <input type="email" name="" placeholder="votre email" class="inp outline-none absolute opacity-0 bg-transparent px-2 rounded-full" id="">
+                    <button id="Subscribe-btn" title="send button" class="bg-blue-950 text-white p-2 absolute right-1  rounded-full px-4 hover:bg-blue-800 hover:duration-200"><span class="sub">Subscribe</span></button>
+                </div>
+            </div>      
+        </section>
+        <section class="relative z-50">
+            <div>
+                <button id="click-me" class="bg-blue-600 group h-10 overflow-hidden  mt-24 text-white p-2 px-10 rounded-full">
+                    <div class="group-hover:-translate-y-8 duration-300 flex flex-col">
+                        <span>Click Me</span>
+                        <span class="mt-2 block">Click Me</span>
+                    </div>
+                </button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+</body>
+</html>
